@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Articles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navigator">
+        <h1>My Articles</h1>
+    </div>
+    <div class="article-container">
+        <div class="article-box">
+            <h3>The Power of Focus</h3>
+            <h5> - Alex Carter</h5>
+            <p>In a world full of distractions, focus is a superpower. Concentrating on one task at a time boosts
+                productivity, improves the quality of work, and reduces stress. To cultivate focus, start by setting clear goals, eliminating distractions, and practicing mindfulness.
+                Remember, great achievements are built on the foundation of sustained focus.
+            </p>
+            <button class="btn" onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <button class="plus">+</button>
+    <div class="layout">
+        <div class="popup">
+            <h3>Add Article</h3>
+            <form>
+                <input type="text" placeholder="Article Title" class="titleinput text"><br>
+                <input type="text" placeholder="Article Author" class="authorinput text"><br>
+                <textarea placeholder="Short Description" class="descriptioninput text"></textarea><br>
+                <button class="popupbtn" id="buttnadd">ADD</button>
+                <button class="popupbtn" id="buttncancel">CANCEL</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
