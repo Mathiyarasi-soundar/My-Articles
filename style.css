@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(154, 154, 245);
+    font-family: "Poppins", sans-serif;
+}
+
+.navigator {
+    background-color: #1a0c0c;
+    color: rgb(166, 166, 250);
+    padding: 10px;
+    margin: 0 1px;
+    width: 100vw;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.article-box {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    width: 300px;
+    padding: 18px;
+    margin: 40px;
+    border-radius: 5%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.article-box h3 {
+    color: rgb(188, 188, 230);
+}
+
+.article-box h5 {
+    margin-left: 20%;
+    padding: 7px;
+}
+
+.article-box button {
+    background-color: #eb615cf3;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+    border: none;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.layout {
+    background-color: rgba(0, 0, 0, 0.836);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+.plus {
+    background-color: #54c8fd;
+    width: 60px;
+    border-radius: 250px;
+    margin-left: 90%;
+    font-size: 50px;
+    border: 1px solid #05abf8;
+}
+
+.popup {
+    background-color: #54c8fd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 40%;
+    z-index: 999;
+    align-items: center;
+    align-content: center;
+    margin: 100px auto;
+    height: 250px;
+    display: none;
+}
+
+.popup input {
+    background: transparent;
+    border: none;
+    border-bottom: solid black 1px;
+    width: 95%;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+.popup textarea {
+    background: transparent;
+    border: solid black 1px;
+    width: 97%;
+    font-size: 15px;
+    margin-top: 20px;
+    height: 70px;
+}
+
+.popup h3 {
+    font-size: x-large;
+}
+
+.popup input::placeholder {
+    color: black;
+}
+
+.popup textarea::placeholder {
+    color: black;
+    padding: 10px;
+}
+
+.popupbtn {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+}
+
+#buttncancel {
+    margin-left: 8px;
+}
+
+@media screen and (max-width:850px) {
+    .article-box {
+        margin: 20px;
+    }
+
+    .popup {
+        width: 60%
+    }
+
+    .plus {
+        margin-left: 85%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .plus {
+        margin-left: 80%;
+    }
+
+    .article-container {
+        text-align: center;
+    }
+
+    .article-box {
+        text-align: start;
+    }
+
+    .popup {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .article-box {
+        width: 270px;
+    }
+}
